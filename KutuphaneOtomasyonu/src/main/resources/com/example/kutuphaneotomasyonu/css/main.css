@@ -1,0 +1,7 @@
+.nav-pane:hover{
+    -fx-background-color: #E82727;
+}
+
+.nav-pane{
+    -fx-background-radius: 8px;
+}

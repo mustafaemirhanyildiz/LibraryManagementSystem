@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kutuphaneotomasyonu.Books">
+   <children>
+      <TextField fx:id="searchBar" layoutX="181.0" layoutY="22.0" prefHeight="37.0" prefWidth="575.0" promptText="Kitap Ara">
+         <padding>
+            <Insets left="35.0" />
+         </padding>
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TableView fx:id="bookTable" layoutX="32.0" layoutY="73.0" prefHeight="564.0" prefWidth="724.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="236.0" text="Kitap İsmi" />
+          <TableColumn fx:id="writerColumn" prefWidth="209.0" text="Yazar Adı" />
+            <TableColumn fx:id="pageColumn" prefWidth="76.0" text="Sayfa Sayısı" />
+            <TableColumn fx:id="typeColumn" prefWidth="202.0" text="Kitap Türü" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="26.0" text="Arama Kutusu">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="189.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

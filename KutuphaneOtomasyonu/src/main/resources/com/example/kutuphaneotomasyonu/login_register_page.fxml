@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kutuphaneotomasyonu.LoginRegisterPage">
+    <children>
+        <AnchorPane prefHeight="650.0" prefWidth="500.0" style="-fx-background-color: #006CCB;">
+            <children>
+                <ImageView fitHeight="221.0" fitWidth="219.0" layoutX="141.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/books.png" />
+                    </image>
+                </ImageView>
+            <Label layoutX="131.0" layoutY="336.0" text="Marun Kütüphane" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="147.0" layoutY="385.0" prefHeight="66.0" prefWidth="200.0" text="- Kitap aklın ilacıdır -" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="loginPane" layoutX="500.0" prefHeight="650.0" prefWidth="500.0">
+            <children>
+                <TextField fx:id="TextLoginUserName" layoutX="125.0" layoutY="192.0" prefHeight="50.0" prefWidth="250.0" promptText="Ad Soyad" style="-fx-background-radius: 8;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="textLoginPassword" focusTraversable="false" layoutX="125.0" layoutY="275.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre" style="-fx-background-radius: 8;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="LoginButton" layoutX="174.0" layoutY="357.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #006CCB; -fx-background-radius: 6;" text="GİRİŞ YAP" textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ButtonSignUp" layoutX="145.0" layoutY="452.0" mnemonicParsing="false" onAction="#goRegisterPageClick" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #006CCB; -fx-background-radius: 6;" text="Üye Ol" textFill="WHITE">
+                    <font>
+                        <Font name="Trebuchet MS" size="18.0" />
+                    </font>
+                </Button>
+            <Label layoutX="192.0" layoutY="58.0" text="Giriş Yap">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="registerPane" layoutX="500.0" prefHeight="650.0" prefWidth="500.0" visible="false">
+         <children>
+            <TextField fx:id="textRegisterUsername" layoutX="125.0" layoutY="143.0" prefHeight="50.0" prefWidth="250.0" promptText="Kullanıcı Adı" style="-fx-background-radius: 8;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="textRegisterPassword" focusTraversable="false" layoutX="125.0" layoutY="213.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre" style="-fx-background-radius: 8;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="LoginButton1" layoutX="175.0" layoutY="379.0" mnemonicParsing="false" onAction="#registerClick" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #006CCB; -fx-background-radius: 6;" text="Kayıt Ol" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonSignUp1" layoutX="146.0" layoutY="466.0" mnemonicParsing="false" onAction="#goLoginPageClick" prefHeight="50.0" prefWidth="208.0" style="-fx-background-color: #006CCB; -fx-background-radius: 6;" text="Giriş Ekranına Dön" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="textRegisterPasswordAgain" focusTraversable="false" layoutX="125.0" layoutY="291.0" prefHeight="50.0" prefWidth="250.0" promptText="Şifre Tekrar" style="-fx-background-radius: 8;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="198.0" layoutY="36.0" text="Kayıt Ol">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
